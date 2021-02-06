@@ -281,6 +281,12 @@ h2 {
   .main-container{
     max-width: 720;
   }
+
+  
+  .main-header{
+    max-width:760px ;
+    
+  }
   .card{
     flex-direction: column;
     justify-content: center;
