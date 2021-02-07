@@ -18,7 +18,16 @@
         Blogin<span class="dot">.</span>
       </div>
       <ul class="main-nav flex clean-list">
-        <li><a href="#">Journal</a></li>
+        <li><button onclick="toggleMenu()" class="x-btn"> ✖</button></li>
+        <li class="open-dropdown"> <a href="#">Journal</a>
+            <ul class="dropdown flex clean-list">
+              <li>October 2016</li>
+              <li>January 2017</li>
+              <li>April 2017</li>
+              <li>July 2017</li>
+            </ul>
+        
+        </li>
         <li><a href="#">About</a></li>
         <li><a href="#">Work</a></li>
         <li><a href="#">Contact</a></li>
@@ -27,6 +36,23 @@
 
     </header>
   </div>
+
+  <div class="modal-screen flex">
+    <div class="modal-content flex">
+      <h2> Join us to get access to the latest stories</h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum accusantium totam repellat iure quibusdam,
+        nesciunt ratione alias voluptates esse consequuntur, consectetur sapiente nobis soluta ea praesentium facere
+        aliquid modi sunt.</p>
+      <form>
+        <input type="email" name="email" placeholder="E-mail">
+        <button class=" Sumbit-btn modal-btn"> Sumbit </button>
+        <button onclick="toggleModal()" class="x-modal-btn modal-btn">Discard</button>
+    </div>
+
+    </form>
+
+  </div>
+
   <main class="main-container">
     <article class="card flex">
       <img class="card-img" src="images/image1.jpg" alt="" class="card-image" />
@@ -41,7 +67,9 @@
           temporibus sint , ea quisquam veritatis similique aperiam neque
           corrupti, consequuntur culpa. Dolor, vel!
         </p>
-        <button onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" class="continue-btn flex">Continue Reading <span class="arrows arrow1 hide"><img src="images/green-arrow.png"></button>
+        <button onmouseover="mouseOver(1)" onmouseout="mouseOut(1)" onclick="toggleModal()"
+          class="continue-btn flex">Continue Reading <span class="arrows arrow1 hide"><img
+              src="images/green-arrow.png"></button>
       </div>
     </article>
 
@@ -59,7 +87,9 @@
           facere id officiis exercitationem molestiae fugit velit. Veniam,
           dolore id?
         </p>
-        <button onmouseover="mouseOver(2)" onmouseout="mouseOut(2)" class="continue-btn flex">Continue Reading <span class="arrows arrow2 hide"><img src="images/green-arrow.png"></button>
+        <button onmouseover="mouseOver(2)" onmouseout="mouseOut(2)" onclick="toggleModal()"
+          class="continue-btn flex">Continue Reading <span class="arrows arrow2 hide"><img
+              src="images/green-arrow.png"></button>
       </div>
     </article>
 
@@ -76,7 +106,9 @@
           aspernatur consectetur, itaque eos magni officia doloremque alias
           pariatur ex est aliquid suscipit amet voluptatum fuga vel!
         </p>
-        <button onmouseover="mouseOver(3)" onmouseout="mouseOut(3)" class="continue-btn flex">Continue Reading <span class="arrows arrow3 hide"><img src="images/green-arrow.png"> </span></button>
+        <button onmouseover="mouseOver(3)" onmouseout="mouseOut(3)" onclick="toggleModal()"
+          class="continue-btn flex">Continue Reading <span class="arrows arrow3 hide"><img src="images/green-arrow.png">
+          </span></button>
       </div>
     </article>
 
@@ -98,7 +130,7 @@
       <ul class="social-links clean-list flex">
         <li>
           <a class="facebook" href="#">
-            <button><img  class="footer-img" src="images/facebook-icon.svg" /></button></a>
+            <button><img class="footer-img" src="images/facebook-icon.svg" /></button></a>
         </li>
         <li>
           <a class="twitter" href="#"><button><img class="footer-img" src="images/twitter-icon.svg" /></button></a>
@@ -106,11 +138,11 @@
           </a>
         </li>
         <li>
-          <a class="instagram" href="#"><button><img  class="footer-img" src="images/instagram-icon.svg"/></button>
+          <a class="instagram" href="#"><button><img class="footer-img" src="images/instagram-icon.svg" /></button>
           </a>
         </li>
         <li>
-          <a class="linkedin" href="#"><button><img  class="footer-img" src="images/linkedin-icon.svg" /></button>
+          <a class="linkedin" href="#"><button><img class="footer-img" src="images/linkedin-icon.svg" /></button>
           </a>
         </li>
       </ul>
